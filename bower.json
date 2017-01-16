@@ -1,0 +1,20 @@
+{
+  "name": "infusion",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Albert Nikulshin"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/cemetery-layouts/infusion",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^5.0.0"
+  }
+}
