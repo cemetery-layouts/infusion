@@ -1,0 +1,43 @@
+%clearfix {
+	&::after, &::before {
+		content: '';
+		display: block;		
+	}
+	&::after {
+		clear: both;
+	}
+}
+
+@mixin ghostVerticalAlign {
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; width: .1px;
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+@mixin font-standart {
+  font-family: 'sintonyregular', Helvetica, Arial, sans-serif;
+  font-weight: normal;  
+}
+@mixin font-bold {
+  font-family: 'sintonybold', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}

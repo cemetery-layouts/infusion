@@ -1,3 +1,9 @@
-.class {
-	text-align: center;
-}
+// VARIABLES
+	// colors 
+$colorMain: #fff;
+$colorTheme: #63c6ae;
+$colorAlt: #242a2c;
+
+
+@import 'mixins';
+@import 'fonts';
