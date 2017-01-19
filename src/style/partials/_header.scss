@@ -1,0 +1,56 @@
+.header {
+	position: relative;
+	height: 71px;	
+	background: $colorMain; 
+  background-image: linear-gradient(to right, $colorTheme 46%, $colorMain 46%, $colorMain 46%); 
+  &::after {
+  	content: '';
+  	display: block;
+  	position: absolute;
+  	bottom: -2px;
+  	height: 2px;
+  	width: 100%;
+  	background-color: rgba(0,0,0, .31);
+  }
+}
+.header__inner {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	background-color: #fff;
+	height: 71px;
+}
+.header__logo {
+	line-height: 71px;
+}
+.header__left {
+ 	background-color: $colorTheme;
+ 	padding-right: 20px;
+}
+.header__logo-link {
+	color: #fff;
+	@include font-bold();
+	font-size: (28/14)+rem;
+	text-decoration: none;
+}
+.nav__list {
+	font-size: 0;
+	padding: 0 5px;
+}
+.nav__item {
+	font-size: 1rem;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 71px;
+	text-transform: uppercase;	
+}
+.nav__link {
+	text-decoration: none;
+	@include font-bold();
+	color: $colorAlt;
+	display: block;
+	padding: 0 25px;
+	&_active {
+		color: $colorTheme;
+	}
+}

@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	font: 14px/26px 'helveticaneue', Helvetica, Arial, sans-serif;
+	height: 100%;
+}
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.container {
+	width: 1080px;
+	margin: 0 auto;
+	@extend %clearfix;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+.section {
+	height: 100vh;
+	width: 100%;
+	background-color: #fff;
+}
