@@ -1,0 +1,27 @@
+.section__btn {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 20px 30px;
+	@include font-standart();
+	font-size: (20/14)+rem;
+	line-height: (30/14)+rem;
+	text-decoration: none;
+	color: $colorMain;
+	text-transform: uppercase;
+	background-color: $colorTheme;
+	border-radius: 3px;
+	&_transparent {
+		background-color: transparent;
+		border: 2px solid #fff;
+	}
+}
+.section__text {
+	color: $colorAlt;
+	font-size: 1rem;
+	line-height: (24/14)+rem;
+}
+.section__title {
+	color: $colorAlt;
+	font-size: (21/14)+rem;
+	line-height: (27/14)+rem;
+}

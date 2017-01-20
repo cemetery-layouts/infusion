@@ -1,4 +1,31 @@
-.promo {
+.promo {	
+	height: 724px;
 	background: #fff url('../../assets/img/promo_bg.jpg') center no-repeat;
-	background-size: cover;
+	background-size: cover;	
+}
+.promo__inner {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);	
+}
+.promo__block {	
+	padding: 35px 63px;
+	max-width: 640px;
+	@include font-standart();
+	font-size: (30/14)+rem;
+	line-height: (54/14)+rem;
+	color: #fff;
+	background-color: $colorTheme;
+	box-shadow: inset 0 1px 0 rgba(255,255,255, .25);
+	margin: 0 auto 6px;
+	&_alt {
+		max-width: 520px;
+		padding: 35px 45px;
+		background-color: $colorAlt;
+		font-size: (17/14)+rem;
+		line-height: (30/14)+rem;	
+		margin-bottom: 40px;			
+	}
 }

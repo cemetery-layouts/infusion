@@ -1,0 +1,21 @@
+.carusel {
+	height: auto;
+}
+.carusel__list {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-between;
+}
+.carusel__item {
+	width: calc(100%/4);
+}
+.carusel__item-title {
+	@extend .section__title;
+}
+.carusel__item-text {
+	@extend .section__text;
+}
+.carusel__img-tag {
+	display: none;
+}
