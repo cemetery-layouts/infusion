@@ -1,7 +1,8 @@
 .section__btn {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 20px 30px;
+	padding: 20px 45px;
+	margin-left: 20px;
 	@include font-standart();
 	font-size: (20/14)+rem;
 	line-height: (30/14)+rem;
@@ -14,14 +15,24 @@
 		background-color: transparent;
 		border: 2px solid #fff;
 	}
+	&_alt {
+		background-color: $colorAlt;
+	}
+	&_short {
+		padding: 20px 30px;
+	}
+	&_nospace {
+		margin-left: 0;
+	}
 }
 .section__text {
 	color: $colorAlt;
 	font-size: 1rem;
-	line-height: (24/14)+rem;
+	line-height: (24/14)+rem;	
 }
 .section__title {
 	color: $colorAlt;
 	font-size: (21/14)+rem;
 	line-height: (27/14)+rem;
+	margin-bottom: 30px;
 }
