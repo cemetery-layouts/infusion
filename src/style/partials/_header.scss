@@ -43,7 +43,10 @@
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 71px;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	&:hover .nav__link {
+		color: $colorTheme;
+	}	
 }
 .nav__link {
 	text-decoration: none;
@@ -51,7 +54,8 @@
 	color: $colorAlt;
 	display: block;
 	padding: 0 25px;
+	transition: .2s;
 	&_active {
 		color: $colorTheme;
-	}
+	}	
 }

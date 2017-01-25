@@ -1,0 +1,26 @@
+.laptop {
+	background-color: $colorAlt;
+}
+.laptop__image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 677px;
+	height: 469px;
+	background:transparent url('../../assets/img/screen.png') center no-repeat;
+	background-size: contain;
+	transform: translate(-50%, -50%);
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 830px;
+		height: 26px;
+		position: absolute;
+		bottom: -14px;
+		left: -76px;
+		background:transparent url('../../assets/img/keyboard.png') center no-repeat;
+		box-shadow: 0 3px 10px rgba(0,0,0, .3);
+		border-radius: 0 0 18px 18px;
+	}	
+}
