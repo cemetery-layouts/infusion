@@ -12,6 +12,7 @@ html, body {
 .container {
 	width: 1180px;
 	margin: 0 auto;
+	height: 100%;
 	@extend %clearfix;
 }
 ul {

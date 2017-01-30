@@ -41,3 +41,30 @@
 	text-shadow: 0 5px 10px rgba(0,0,0, 1);
 	letter-spacing: (4px/14px)+rem;
 }
+.slider__nav {
+	width: 1180px;
+	height: (60/14)+rem;
+	transform: translate(-50%, -50%);	
+	position: absolute;
+	top: 50%;	
+	left: 50%;	
+	
+}
+.slider__nav-btn {
+	position: absolute;
+	display: block;
+	color: #fff;
+	font-family: 'quicksand', sans-serif;
+	font-size: (60/14)+rem;
+	line-height: (60/14)+rem;
+	text-decoration: none;	
+	&_prev {
+		left: 0;
+	}
+	&_next {
+		right: 0;
+	}
+	&:hover {
+		color: $colorTheme;
+	}
+}

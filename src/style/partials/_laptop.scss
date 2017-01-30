@@ -1,5 +1,9 @@
 .laptop {
-	background-color: $colorAlt;
+	background-color: $colorAlt;	
+	height: 745px;
+}
+.laptop__wrapper {
+	height: 100%;
 }
 .laptop__image {
 	position: absolute;
