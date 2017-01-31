@@ -1,0 +1,115 @@
+.testimonials {
+	height: 100%;
+	padding: 78px 0;
+	background-color: $colorTheme;
+	border-bottom: 8px solid #58b9a1;
+	color: #fff;
+}
+.testimonials__wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;	
+}
+.testimonials__slider {
+	width: 1060px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.testimonials__list {
+	white-space: nowrap;	
+}
+.testimonials__item {
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	white-space: normal;
+}
+.testimonials__blockquote {
+	position: relative;	
+	text-align: center;
+	@include font-standart;
+	font-size: (30/14)+rem;
+	line-height: (44/14)+rem;
+	font-style: italic;
+	padding: 20px 0;
+	margin: 0;
+	&::after,&::before {
+		content: '“';
+		display: block;
+		position: absolute;
+		font: inherit;
+		@include font-standart;
+		font-size: (48/14)+rem;		
+	}
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	&::after {
+		right: 0;
+		bottom: 20px;
+		transform: rotate(180deg);
+	}
+}
+.testimonials__autor {
+	display: inline-block;
+	@include font-standart;
+	font-size: (18/14)+rem;
+	margin-bottom: 45px;
+}
+.testimonials__page-list {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	margin-left: -5px;	
+}
+.testimonials__page-item {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	border: 3px solid #fff;
+	background-color: transparent;
+	border-radius: 50%;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 1rem;
+	margin-left: 5px;
+	transition: border .2s, background-color .4s;	
+	&_active {
+		background-color: #fff;
+		border: 3px solid $colorTheme;
+	}
+	&:hover {
+		border: 3px solid $colorTheme;
+		background-color: #fff;
+	}	
+}
+.testimonials__controls {
+	@extend .slider__nav;
+	width: 100%;
+	height: (40/14)+rem;
+}
+.testimonials__btn {
+		@extend .slider__nav-btn;
+		font-size: (18/14)+rem;
+		line-height: (40/14)+rem;	
+		width: 40px;
+		text-align: center;
+		background-color: rgba(0,0,0, .1);
+		border-radius: 50%;
+		font-weight: bold;
+		&:hover {
+			color: #fff;
+		}
+		&_prev {
+			left: 0;
+			top: 0;
+		}
+		&_next {
+			right: 0;
+			top: 0;
+		}
+}
+
