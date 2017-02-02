@@ -3,3 +3,35 @@
 	height: 547px;
 	padding-top: 50px;
 }
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -10px;
+}
+.footer__col {
+	flex-basis: calc(100%/4);
+	flex-grow: 0;
+	padding: 0 10px;
+	&_small {
+		flex-basis: 160px;
+	}
+	&_big {
+		flex-grow: 1;		
+	}	
+}
+.footer__logo-img {
+	vertical-align: middle;
+}
+.footer__text {	
+	font-size: 1rem;
+	line-height: (24/14)+rem;
+	color: #454e51;
+}
+.footer__item {
+	margin-bottom: 15px;
+}
+.footer__link {
+	@extend .footer__text;	
+	font-family: "helveticaneuebold", sans-serif;
+	text-decoration: none;
+}

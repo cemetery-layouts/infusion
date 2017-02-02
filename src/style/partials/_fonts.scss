@@ -19,6 +19,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'helveticaneuebold';
+    src: url('../../fonts/HelveticaNeueBold.woff2') format('woff2'),
+         url('../../fonts/HelveticaNeueBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'latobold';
