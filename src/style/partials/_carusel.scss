@@ -26,7 +26,7 @@
 }
 .carusel__item {
 	position: relative;	
-	width: calc(100%/4 - 20px);	
+	width: calc(100%/4 - 15px);	
 	cursor: pointer;
 	text-align: left;
 	&::after {
@@ -76,11 +76,11 @@
 	color: inherit;
 }
 .carusel__item-block {
-	padding: 50px 30px;
+	padding: 44px 35px;
 }
 .carusel__item-title {
 	@extend .section__title;
-	margin-bottom: 25px;
+	margin-bottom: 18px;
 	transition: .3s;
 }
 .carusel__item-text {
@@ -98,13 +98,13 @@
 }
 .carusel__autor {	
 	display: block;
-	width: 90px;
-	height: 90px;
+	width: 88px;
+	height: 88px;
 	overflow: hidden;
 	border-radius: 50%;
 	box-shadow: inset 0 0 0 4px #f3f3f3;
 	position: absolute;
-	top: 175px;
+	top: 174px;
 	transform: translate(-50%, -65%);
 	left: 50%;
 	background-size: cover;
@@ -167,23 +167,23 @@
 }
 .carusel__nav {
 	height: 26px;
-	width: 120%;
+	width: 140%;
 	position: absolute;
 	z-index: 1;
 	top: 0;
-	left: -10%;
+	left: -20%;
 }
 .carusel__btn {
 	display: block;
-	width: 18px;
-	height: 18px;
+	width: 14px;
+	height: 14px;
 	border: 2px solid #929da5;
 	border-right: none;
 	border-bottom: none;	
 	border-radius: 2px;
 	position: absolute;
 	top: 50%;
-	margin-top: -8px;
+	margin-top: -4px;
 }
 .carusel__btn_prev {
 	transform: rotate(-45deg);
