@@ -17,6 +17,9 @@
 .carusel__wrapper {
 	text-align: center;
 }
+.carusel__container {
+	overflow: hidden;
+}
 .carusel__list {
 	display: flex;
 	flex-direction: row;
@@ -26,7 +29,7 @@
 }
 .carusel__item {
 	position: relative;	
-	width: calc(100%/4 - 15px);	
+	// width: calc(100%/4 - 15px);	
 	cursor: pointer;
 	text-align: left;
 	&::after {
@@ -156,7 +159,7 @@
 	font-size: 1rem;
 	margin-left: 5px;
 	transition: border .2s, background-color .4s;	
-	&_active {
+	&.active {
 		background-color: #929da5;
 		border: 3px solid #fff;
 	}
@@ -184,6 +187,7 @@
 	position: absolute;
 	top: 50%;
 	margin-top: -4px;
+	cursor: pointer;
 }
 .carusel__btn_prev {
 	transform: rotate(-45deg);
