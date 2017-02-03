@@ -1,10 +1,10 @@
 .section__btn {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 20px 45px;
-	margin-left: 20px;
+	padding: 13px 45px;
+	margin-left: 15px;
 	@include font-standart();
-	font-size: (20/14)+rem;
+	font-size: (19/14)+rem;
 	line-height: (30/14)+rem;
 	text-decoration: none;
 	color: $colorMain;
@@ -20,12 +20,11 @@
 		background-color: $colorAlt;	
 	}
 	&_short {
-		padding: 20px 30px;
+		padding: 12px 24px;
 	}
 	&_nospace {
 		margin-left: 0;
 	}
-
 	&:hover {
 		transform: scale(1.1);
 	}

@@ -59,24 +59,12 @@
 	margin-bottom: 45px;
 }
 .testimonials__page-list {
-	display: inline-block;
-	vertical-align: middle;
-	font-size: 0;
-	margin-left: -5px;	
+	@extend .carusel__page-list;
 }
 .testimonials__page-item {
-	display: inline-block;
-	vertical-align: middle;
-	width: 16px;
-	height: 16px;
+	@extend .carusel__page-item;	
 	border: 3px solid #fff;
-	background-color: transparent;
-	border-radius: 50%;
-	cursor: pointer;
-	text-decoration: none;
-	font-size: 1rem;
-	margin-left: 5px;
-	transition: border .2s, background-color .4s;	
+	background-color: transparent;	
 	&_active {
 		background-color: #fff;
 		border: 3px solid $colorTheme;
@@ -93,9 +81,10 @@
 }
 .testimonials__btn {
 		@extend .slider__nav-btn;
-		font-size: (18/14)+rem;
+		font-size: (19/14)+rem;
 		line-height: (40/14)+rem;	
 		width: 40px;
+		height: 40px;
 		text-align: center;
 		background-color: rgba(0,0,0, .1);
 		border-radius: 50%;
