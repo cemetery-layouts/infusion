@@ -12,5 +12,7 @@ $('.carusel__container').owlCarousel({
 	stageClass: 'carusel__list',	
 	margin: 20,
 	navClass: ['carusel__btn carusel__btn_prev', 'carusel__btn carusel__btn_next'],
-	navText: ['','']
+	navText: ['',''],
+	autoplay: true,
+	autoplayTimeout: 2500	
 });
