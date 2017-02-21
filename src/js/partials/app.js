@@ -16,3 +16,18 @@ $('.carusel__container').owlCarousel({
 	autoplay: true,
 	autoplayTimeout: 2500	
 });
+$('.testimonials__slider').owlCarousel({
+	mouseDrag: false,
+	touchDrag: false,
+	animateOut: 'testimonials__animate-out',
+	animateInClass: 'testimonials__animate-in',
+	items: 1,
+	stageElement: 'ul',
+	itemElement: 'li',
+	dotsContainer: '.testimonials__page-list',
+	dotClass: 'testimonials__page-item',
+	navContainer: '.testimonials__controls',	
+	navClass: ['testimonials__btn testimonials__btn_prev', 'testimonials__btn testimonials__btn_next'],
+	navText: ['<','>'],
+	stageClass: 'testimonials__list'	
+});
