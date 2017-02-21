@@ -16,3 +16,29 @@ $('.carusel__container').owlCarousel({
 	autoplay: true,
 	autoplayTimeout: 2500	
 });
+$('.testimonials__slider').owlCarousel({
+	mouseDrag: false,
+	touchDrag: false,
+	animateOut: 'testimonials__animate-out',
+	animateInClass: 'testimonials__animate-in',
+	items: 1,
+	stageElement: 'ul',
+	itemElement: 'li',
+	dotsContainer: '.testimonials__page-list',
+	dotClass: 'testimonials__page-item',
+	navContainer: '.testimonials__controls',	
+	navClass: ['testimonials__btn testimonials__btn_prev', 'testimonials__btn testimonials__btn_next'],
+	navText: ['<','>'],
+	stageClass: 'testimonials__list'	
+});
+$('.slider').owlCarousel({
+	loop: true,
+	items: 1,
+	dots: false,
+	stageElement: 'ul',
+	itemElement: 'li',
+	stageClass: 'slider__list',
+	navText: ['<','>'],
+	navContainer: '.slider__nav',
+	navClass: ['slider__nav-btn slider__nav-btn_prev', 'slider__nav-btn slider__nav-btn_next']
+});
