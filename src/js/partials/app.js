@@ -38,7 +38,7 @@ $('.slider').owlCarousel({
 	stageElement: 'ul',
 	itemElement: 'li',
 	stageClass: 'slider__list',
-	navText: ['<','>'],
+	navText: ['',''],
 	navContainer: '.slider__nav',
 	navClass: ['slider__nav-btn slider__nav-btn_prev', 'slider__nav-btn slider__nav-btn_next']
 });

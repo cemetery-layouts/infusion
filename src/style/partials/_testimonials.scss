@@ -96,6 +96,8 @@
 	border-radius: 50%;
 	font-weight: bold;
 	cursor: pointer;
+	border: none;
+	user-select: none;
 	&:hover {
 		color: #fff;
 	}
@@ -131,13 +133,9 @@
 		opacity: 1;
 	}
 }
- /* .owl-animated-out - only for current item */ 
-/* This is very important class. Use z-index if you want move Out item above In item */ 
 .owl-animated-out {
 	z-index : 1 
 }
-/* .owl-animated-in - only for upcoming item
-/* This is very important class. Use z-index if you want move In item above Out item */ 
 .owl-animated-in {
 	z-index : 0 
 }
