@@ -31,3 +31,14 @@ $('.testimonials__slider').owlCarousel({
 	navText: ['<','>'],
 	stageClass: 'testimonials__list'	
 });
+$('.slider').owlCarousel({
+	loop: true,
+	items: 1,
+	dots: false,
+	stageElement: 'ul',
+	itemElement: 'li',
+	stageClass: 'slider__list',
+	navText: ['<','>'],
+	navContainer: '.slider__nav',
+	navClass: ['slider__nav-btn slider__nav-btn_prev', 'slider__nav-btn slider__nav-btn_next']
+});
