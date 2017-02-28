@@ -101,13 +101,32 @@
 	&:hover {
 		color: #fff;
 	}
+	&::before {
+		content: '';
+		display: block;
+		width: 7px;
+		height: 7px;
+		border: 2px solid #FFF;
+		border-right: none;
+		border-bottom: none;	
+		border-radius: 2px;
+		position: absolute;
+		top: 50%;
+		left: 50%;		
+	}
 	&_prev {
 		left: 0;
 		top: 0;
+		&::before {			
+			transform: translate(-30%, -50%) rotate(-45deg);				
+		}
 	}
 	&_next {
 		right: 0;
 		top: 0;
+		&::before {
+			transform: translate(-70%, -50%) rotate(135deg);
+		}
 	}
 }
 .testimonials__animate-out{

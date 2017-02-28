@@ -28,7 +28,7 @@ $('.testimonials__slider').owlCarousel({
 	dotClass: 'testimonials__page-item',
 	navContainer: '.testimonials__controls',	
 	navClass: ['testimonials__btn testimonials__btn_prev', 'testimonials__btn testimonials__btn_next'],
-	navText: ['<','>'],
+	navText: ['',''],
 	stageClass: 'testimonials__list'	
 });
 $('.slider').owlCarousel({
